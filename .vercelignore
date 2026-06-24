@@ -1,0 +1,5 @@
+*.py
+pages/
+requirements.txt
+.env
+.env.example

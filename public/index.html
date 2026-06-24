@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Etsy Description Generator</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #1a1a1a;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      color: #5f6368;
+      margin-bottom: 2rem;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: #ff4b4b;
+      color: #fff;
+      border: none;
+      border-radius: 0.5rem;
+      padding: 0.6rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-primary:hover {
+      background: #e04343;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #e8eaed;
+      margin: 2.5rem 0;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+
+    .feature-card {
+      background: #f8f9fb;
+      border: 1px solid #e8eaed;
+      border-radius: 16px;
+      padding: 1.5rem;
+      height: 100%;
+    }
+
+    .feature-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-card p {
+      color: #5f6368;
+      font-size: 0.95rem;
+    }
+
+    .steps {
+      list-style: none;
+    }
+
+    .steps li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.75rem;
+      font-size: 1rem;
+    }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 999px;
+      background: #ff6b6b;
+      color: #fff;
+      font-weight: 700;
+      margin-right: 0.75rem;
+      flex-shrink: 0;
+    }
+
+    .cta-section h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .link-secondary {
+      color: #ff4b4b;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .link-secondary:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: #9aa0a6;
+      font-size: 0.85rem;
+      padding: 2rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1 class="hero-title">日本語で入力するだけ。<br />Etsy 出品文を英語で自動生成。</h1>
+    <p class="hero-subtitle">
+      商品名・雰囲気・カラー・ターゲット・用途を入力するだけで、
+      Title・Description・SEO Tags・Instagram Caption まで一括作成。
+    </p>
+    <a class="btn-primary" href="#usage">今すぐ生成する</a>
+
+    <hr class="divider" />
+
+    <h2>できること</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>📝 出品文を一括生成</h3>
+        <p>Etsy Title、商品説明、13個の SEO Tags、Main Color、Instagram Caption を英語で出力。</p>
+      </div>
+      <div class="feature-card">
+        <h3>🌏 日本語入力OK</h3>
+        <p>商品情報は日本語で入力。英語圏の購入者向けに自然な文章へ変換します。</p>
+      </div>
+      <div class="feature-card">
+        <h3>🔍 SEO を意識</h3>
+        <p>検索されやすいキーワードを盛り込み、Etsy で見つかりやすい表現を提案します。</p>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <h2 id="usage">使い方</h2>
+    <ol class="steps">
+      <li><span class="step-number">1</span>商品名・雰囲気・カラー・ターゲット・用途を入力</li>
+      <li><span class="step-number">2</span>「生成する」をクリック</li>
+      <li><span class="step-number">3</span>英語の出品文をコピーまたはダウンロード</li>
+    </ol>
+
+    <hr class="divider" />
+
+    <section class="cta-section">
+      <h3>さっそく試してみる</h3>
+      <p>
+        生成機能はローカル環境で利用できます。
+        <a class="link-secondary" href="https://github.com/marinerg2002-prog/etsy-description-generator#使い方">セットアップ手順を見る</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Etsy Description Generator
+  </footer>
+</body>
+</html>
